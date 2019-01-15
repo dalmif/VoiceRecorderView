@@ -1,3 +1,3 @@
 # VoiceRecorderView
 Custom View For Voice Recorder (Learning http://alef-ba.ir)
-<div id="154756267719777"><script type="text/JavaScript" src="https://www.aparat.com/embed/1tG7J?data[rnddiv]=154756267719777&data[responsive]=yes"></script></div>
+[![Watch the video](http://alef-ba.ir/uploads/picture/ios/Screen%20Shot%201397-10-25%20at%2017.57.33.png)](https://www.aparat.com/v/1tG7J)

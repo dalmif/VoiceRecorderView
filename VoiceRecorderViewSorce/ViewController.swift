@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , VMVDelegate {
+    func playButtonClicked() {
+        voiceMessageView?.play()
+    }
+    
+    func pauseButtonClicked() {
+        voiceMessageView?.pause()
+    }
+    func stopButtonClicked() {
+        voiceMessageView?.stop()
+    }
 
-    @IBOutlet weak var waveSoundView: WaveSoundView!
+    @IBOutlet weak var voiceMessageView: VoiceMessageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerFunc), userInfo: nil, repeats: true)
+        voiceMessageView.delegate = self
     }
-
-    @objc func timerFunc () {
-        let randomInt = Int.random(in: 20..<99)
-        waveSoundView.addBar(percent: CGFloat(randomInt))
-    }
+    
+    
 }
 

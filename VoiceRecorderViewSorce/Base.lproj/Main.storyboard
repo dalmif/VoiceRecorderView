@@ -17,108 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-Rg-jYn">
-                                <rect key="frame" x="16" y="410.5" width="382" height="75"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soc-cW-NVo" customClass="VoiceRecorderView" customModule="VoiceRecorderViewSorce" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="75"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqv-rs-8C5">
-                                        <rect key="frame" x="239" y="27" width="35" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.1137254902" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dr-1W-uhM" customClass="WaveSoundView" customModule="VoiceRecorderViewSorce" customModuleProvider="target">
-                                        <rect key="frame" x="58" y="9" width="171" height="57"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                <color key="value" red="0.11372549019607843" green="0.45490196078431372" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="marginTopDown">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="marginLeft">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGH-hB-CZv">
-                                        <rect key="frame" x="16" y="22.5" width="30" height="30"/>
-                                        <color key="backgroundColor" red="0.1137254902" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="MV7-Yz-SvE"/>
-                                            <constraint firstAttribute="width" secondItem="oGH-hB-CZv" secondAttribute="height" multiplier="1:1" id="fIS-QZ-0Kw"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-hY-2t9">
-                                        <rect key="frame" x="287" y="25" width="25" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="yQn-hY-2t9" secondAttribute="height" multiplier="1:1" id="RVW-5P-ugW"/>
-                                            <constraint firstAttribute="width" constant="25" id="TMr-G0-Yqz"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper_plane" translatesAutoresizingMaskIntoConstraints="NO" id="maM-Ra-JJC">
-                                        <rect key="frame" x="327" y="25" width="25" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="maM-Ra-JJC" secondAttribute="height" multiplier="1:1" id="A55-1R-lRc"/>
-                                            <constraint firstAttribute="width" constant="25" id="H5A-Ph-T8I"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-Wp-vPw" customClass="VoiceMessageView" customModule="VoiceRecorderViewSorce" customModuleProvider="target">
+                                <rect key="frame" x="16" y="408" width="382" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Nqv-rs-8C5" firstAttribute="centerY" secondItem="rKk-Rg-jYn" secondAttribute="centerY" id="4Td-k6-LAL"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Dr-1W-uhM" secondAttribute="bottom" constant="9" id="9CE-XZ-KBv"/>
-                                    <constraint firstItem="2Dr-1W-uhM" firstAttribute="top" secondItem="rKk-Rg-jYn" secondAttribute="top" constant="9" id="Aw3-xz-uBw"/>
-                                    <constraint firstItem="oGH-hB-CZv" firstAttribute="leading" secondItem="rKk-Rg-jYn" secondAttribute="leading" constant="16" id="B02-cH-Wf5"/>
-                                    <constraint firstItem="yQn-hY-2t9" firstAttribute="centerY" secondItem="rKk-Rg-jYn" secondAttribute="centerY" id="Crm-Np-bHH"/>
-                                    <constraint firstAttribute="trailing" secondItem="maM-Ra-JJC" secondAttribute="trailing" constant="30" id="Dhx-5E-xi5"/>
-                                    <constraint firstItem="oGH-hB-CZv" firstAttribute="centerY" secondItem="rKk-Rg-jYn" secondAttribute="centerY" id="HF7-mv-44V"/>
-                                    <constraint firstAttribute="bottom" secondItem="Soc-cW-NVo" secondAttribute="bottom" id="I9T-M0-mKK"/>
-                                    <constraint firstItem="yQn-hY-2t9" firstAttribute="leading" secondItem="Nqv-rs-8C5" secondAttribute="trailing" constant="13" id="ISv-oc-T7G"/>
-                                    <constraint firstItem="Soc-cW-NVo" firstAttribute="top" secondItem="rKk-Rg-jYn" secondAttribute="top" id="LDn-eS-iAB"/>
-                                    <constraint firstItem="maM-Ra-JJC" firstAttribute="centerY" secondItem="rKk-Rg-jYn" secondAttribute="centerY" id="MI6-ar-uYw"/>
-                                    <constraint firstAttribute="height" constant="75" id="OHT-zB-4q6"/>
-                                    <constraint firstItem="maM-Ra-JJC" firstAttribute="leading" secondItem="yQn-hY-2t9" secondAttribute="trailing" constant="15" id="V7G-eO-vQx"/>
-                                    <constraint firstItem="Soc-cW-NVo" firstAttribute="leading" secondItem="rKk-Rg-jYn" secondAttribute="leading" id="lSN-Pj-H75"/>
-                                    <constraint firstItem="2Dr-1W-uhM" firstAttribute="leading" secondItem="oGH-hB-CZv" secondAttribute="trailing" constant="12" id="nNs-wP-Fb9"/>
-                                    <constraint firstItem="Nqv-rs-8C5" firstAttribute="leading" secondItem="2Dr-1W-uhM" secondAttribute="trailing" constant="10" id="of6-Vx-ytX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Soc-cW-NVo" secondAttribute="trailing" id="ubG-Tn-2id"/>
-                                    <constraint firstItem="2Dr-1W-uhM" firstAttribute="centerY" secondItem="rKk-Rg-jYn" secondAttribute="centerY" id="yUJ-Kd-fjF"/>
+                                    <constraint firstAttribute="height" constant="80" id="JNh-IA-Ndt"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="waveLineColor">
+                                        <color key="value" red="0.1137254902" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="waveUnPlayedLineColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="waveLineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="waveMarginTopDown">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="waveMarginLeft">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColorShape">
+                                        <color key="value" red="0.1137254902" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rKk-Rg-jYn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0KB-Fc-V0R"/>
-                            <constraint firstItem="rKk-Rg-jYn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gfl-CU-HdW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rKk-Rg-jYn" secondAttribute="trailing" constant="16" id="v8c-LT-zFc"/>
-                            <constraint firstItem="rKk-Rg-jYn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xKC-dN-jqA"/>
+                            <constraint firstItem="c7E-Wp-vPw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CK0-ff-ZfD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7E-Wp-vPw" secondAttribute="trailing" constant="16" id="YdF-Zq-l2i"/>
+                            <constraint firstItem="c7E-Wp-vPw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="afG-8K-C8H"/>
+                            <constraint firstItem="c7E-Wp-vPw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xy3-79-xab"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="waveSoundView" destination="2Dr-1W-uhM" id="BMb-4p-AQI"/>
+                        <outlet property="voiceMessageView" destination="c7E-Wp-vPw" id="ymu-r4-r6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5.5999999999999996" y="26.53673163418291"/>
+            <point key="canvasLocation" x="4.3478260869565224" y="26.116071428571427"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="delete" width="96" height="96"/>
-        <image name="paper_plane" width="48" height="48"/>
-    </resources>
 </document>
